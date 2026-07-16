@@ -354,18 +354,26 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "AvantGardeLT";
+  src: url("./fonts/AvantGardeLT-Medium.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   box-sizing: border-box;
 }
 
-.arrow-clip {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #000000;
-  clip-path: polygon(20% 35%, 50% 65%, 80% 35%, 90% 45%, 50% 85%, 10% 45%);
-}
-
 .main-section {
-  background-image: url("../images/background.jpg");
+  background: #EFE9E3;
+  background: linear-gradient(90deg, rgb(239, 233, 227) 0%, rgb(246, 225, 229) 70%, rgb(242, 219, 202) 100%);
+}
+.main-section__container {
+  max-width: 1700px;
+  margin: 0 auto;
+  width: 100%;
+}
+.main-section__container-logo {
+  font-size: 38px;
 }/*# sourceMappingURL=style.css.map */
