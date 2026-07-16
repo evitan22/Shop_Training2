@@ -3,7 +3,14 @@
 
 @font-face 
     font-family: "AvantGardeLT"
-    src: url('./fonts/AvantGardeLT-Medium.woff2') format('woff2')
+    src: url('../fonts/AvantGardeLT-Medium.woff2') format('woff2')
+    font-weight: 100 900
+    font-style: normal
+    font-display: swap
+
+@font-face 
+    font-family: "Articulat CF Medium"
+    src: url('../fonts/ArticulatCFMediumRegular.woff2') format('woff2')
     font-weight: 100 900
     font-style: normal
     font-display: swap
@@ -18,5 +25,44 @@
         max-width: 1700px
         margin: 0 auto
         width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
         &-logo 
             font-size: 38px
+            font-family: "AvantGardeLT"
+            margin-top: 36px
+        &-offers
+            display: flex
+            background: white
+            width: 777px
+            height: 64px
+            margin-top: 24px
+            border-radius: 35px
+            li
+                display: inline-flex 
+                align-items: center  
+                gap: 6px      
+                margin-left: 35px   
+                font-size: 15px
+                font-family: "Articulat CF Medium"  
+                img
+                    display: block
+                button
+                    width: 55px
+                    height: 21px
+                    background: #28beef
+                    border: none
+                    border-radius: 26px
+                    color: white
+                    display: inline-flex
+                    justify-content: center
+                    align-items: center
+                    font-size: 13px
+                    font-family: "Articulat CF Medium"
+                    margin-left: 8px
+            li:first-child
+                margin-left: 54px
+        &-buttons
+            display: flex
+            margin-top: 34px
