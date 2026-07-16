@@ -1,2 +1,23 @@
-.gal
-    border: 1px solid black
+@import "normalizez.scss"
+@import "resets.scss"
+
+*
+    box-sizing: border-box
+
+.arrow-clip 
+    display: inline-block
+    width: 20px
+    height: 20px
+    background-color: #000000
+  
+    clip-path: polygon(
+        20% 35%, 
+        50% 65%, 
+        80% 35%, 
+        90% 45%, 
+        50% 85%, 
+        10% 45%
+    )
+
+.main-section
+    background-image: url('../images/background.jpg')
