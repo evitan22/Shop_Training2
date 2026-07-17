@@ -355,6 +355,13 @@ table {
 }
 
 @font-face {
+  font-family: "WF Visual Sans";
+  src: url("https://dhygzobemt712.cloudfront.net/Fonts/VF/WFVisualSansVF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "AvantGardeLT";
   src: url("../fonts/AvantGardeLT-Medium.woff2") format("woff2");
   font-weight: 100 900;
@@ -368,6 +375,20 @@ table {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Medium.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+.jost {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -383,6 +404,7 @@ table {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 237px;
 }
 .main-section__container-logo {
   font-size: 38px;
@@ -428,4 +450,89 @@ table {
 .main-section__container-buttons {
   display: flex;
   margin-top: 34px;
+  gap: 16px;
+}
+.main-section__container-buttons button {
+  width: 52px;
+  height: 52px;
+  border-radius: 25px;
+  border: 0;
+  background-color: white;
+}
+.main-section__container-buttons button:last-child {
+  background-color: black;
+  position: relative;
+}
+.main-section__container-buttons button:last-child div {
+  background-color: #EF2C7D;
+  position: absolute;
+  border-radius: 25px;
+  width: 16px;
+  height: 16px;
+  right: 0px;
+  top: 0px;
+  color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Jost";
+}
+.main-section__poster {
+  display: flex;
+}
+.main-section__poster-left {
+  margin-left: 95px;
+}
+.main-section__poster-left-firstRow {
+  font-family: "WF Visual Sans";
+  font-size: 66px;
+  font-weight: 600;
+  margin-bottom: 17px;
+}
+.main-section__poster-left-firstRow-separateWord {
+  color: #ee5193;
+}
+.main-section__poster-left-secondRow {
+  font-family: "Graphik";
+  font-size: 19px;
+  margin-bottom: 51px;
+}
+.main-section__poster-left-leftButton {
+  width: 36px;
+  height: 43px;
+  background-color: black;
+  color: white;
+  margin-right: 10px;
+}
+.main-section__poster-left-rightButton {
+  width: 34px;
+  height: 42px;
+  background-color: white;
+  color: black;
+}
+.main-section__poster-left button {
+  width: 252px;
+  height: 66px;
+  border-radius: 35px;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 23px;
+}
+.main-section__poster-left button img {
+  margin-right: 40px;
+}
+.main-section__poster-right {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url("../images/women.png");
+  width: 1100px;
+  height: 728px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -50px -50px;
+}
+.main-section__poster-lolipops {
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
