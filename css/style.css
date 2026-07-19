@@ -484,7 +484,7 @@ body {
 }
 .main-section__poster {
   display: flex;
-  margin-bottom: 224px;
+  margin-bottom: 146px;
 }
 .main-section__poster-left {
   margin-left: 95px;
@@ -526,9 +526,26 @@ body {
   display: inline-flex;
   align-items: center;
   padding-left: 23px;
+  font-family: "Articulat CF Medium";
+  font-size: 17px;
 }
 .main-section__poster-left button img {
-  margin-right: 40px;
+  margin-right: 35px;
+}
+.main-section__poster-left > img {
+  position: absolute;
+}
+.main-section__poster-left > img:nth-of-type(1) {
+  inset: -18% auto auto -8%;
+}
+.main-section__poster-left > img:nth-of-type(2) {
+  inset: -8% auto auto 39%;
+}
+.main-section__poster-left > img:nth-of-type(3) {
+  inset: -18% -9% auto auto;
+}
+.main-section__poster-left > img:nth-of-type(4) {
+  inset: auto 15% -20% auto;
 }
 .main-section__poster-right {
   position: absolute;
@@ -568,7 +585,74 @@ body {
   font-family: "Graphik";
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: 48px;
 }
-.main-section__offers-buttons:not(:last-child) {
-  width: 16.6%;
+.main-section__offers-buttons {
+  display: flex;
+  width: 100%;
+  max-width: 92%;
+  gap: 18px;
+}
+.main-section__offers-buttons button:not(:last-child) {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 73px;
+  border: none;
+  border-radius: 42px;
+  font-family: "Articulat CF Medium";
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.main-section__offers-buttons button:not(:last-child) div {
+  width: 57px;
+  height: 54px;
+  margin-left: 10px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-section__offers-buttons button:not(:last-child) span {
+  flex-grow: 1;
+  text-align: center;
+  padding-right: 15px;
+}
+.main-section__offers-buttons button:last-child {
+  width: 63px;
+  height: 64px;
+  border-radius: 35px;
+  border: none;
+  background-color: #2C2828;
+}
+.main-section__offers-buttons-firstButton {
+  background-color: #FFEEF7;
+}
+.main-section__offers-buttons-firstButton div {
+  background-color: #FF7EB4;
+}
+.main-section__offers-buttons-secondButton {
+  background-color: #E4F8FF;
+}
+.main-section__offers-buttons-secondButton div {
+  background-color: #28BEEF;
+}
+.main-section__offers-buttons-thirdButton {
+  background-color: #F7F3FB;
+}
+.main-section__offers-buttons-thirdButton div {
+  background-color: #C389FF;
+}
+.main-section__offers-buttons-fourthButton {
+  background-color: #FFECEB;
+}
+.main-section__offers-buttons-fourthButton div {
+  background-color: #FFA4A3;
+}
+.main-section__offers-buttons-fifthButton {
+  background-color: #E9FDFF;
+}
+.main-section__offers-buttons-fifthButton div {
+  background-color: #46CDDE;
 }/*# sourceMappingURL=style.css.map */

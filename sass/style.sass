@@ -116,7 +116,7 @@ body
                         font-family: "Jost"
     &__poster
         display: flex
-        margin-bottom: 224px
+        margin-bottom: 146px
         &-left
             margin-left: 95px
             position: relative
@@ -151,8 +151,20 @@ body
                 display: inline-flex
                 align-items: center
                 padding-left: 23px
+                font-family: "Articulat CF Medium"
+                font-size: 17px
                 img
-                    margin-right: 40px
+                    margin-right: 35px
+            > img
+                position: absolute
+                &:nth-of-type(1)
+                    inset: -18% auto auto -8%
+                &:nth-of-type(2)
+                    inset: -8% auto auto 39%
+                &:nth-of-type(3)
+                    inset: -18% -9% auto auto
+                &:nth-of-type(4)
+                    inset: auto 15% -20% auto
         &-right
             position: absolute
             inset: 60px 0px auto auto 
@@ -186,6 +198,59 @@ body
             font-family: "Graphik"
             font-size: 20px
             font-weight: 400
-        &-buttons:not(:last-child)
-            width: 16.6%
+            margin-bottom: 48px
+        &-buttons
+            display: flex
+            width: 100%
+            max-width: 92% 
+            gap: 18px
+            button:not(:last-child)
+                display: flex
+                align-items: center
+                flex: 1 
+                height: 73px 
+                border: none
+                border-radius: 42px
+                font-family: "Articulat CF Medium"
+                font-size: 17px
+                font-weight: 600
+                cursor: pointer
+                div
+                    width: 57px
+                    height: 54px
+                    margin-left: 10px
+                    border-radius: 30px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                span
+                    flex-grow: 1         
+                    text-align: center   
+                    padding-right: 15px
+            button:last-child
+                width: 63px
+                height: 64px
+                border-radius: 35px
+                border: none
+                background-color: #2C2828
+            &-firstButton
+                background-color: #FFEEF7
+                div
+                    background-color: #FF7EB4
+            &-secondButton
+                background-color: #E4F8FF
+                div
+                    background-color: #28BEEF
+            &-thirdButton
+                background-color: #F7F3FB
+                div
+                    background-color: #C389FF
+            &-fourthButton
+                background-color: #FFECEB
+                div
+                    background-color: #FFA4A3
+            &-fifthButton
+                background-color: #E9FDFF
+                div
+                    background-color: #46CDDE
                
