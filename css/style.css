@@ -400,6 +400,8 @@ body {
 .main-section {
   background: #EFE9E3;
   background: linear-gradient(90deg, rgb(239, 233, 227) 0%, rgb(246, 225, 229) 70%, rgb(242, 219, 202) 100%);
+  padding-bottom: 53px;
+  margin-bottom: 85px;
 }
 .main-section__container {
   max-width: 1700px;
@@ -592,6 +594,7 @@ body {
   width: 100%;
   max-width: 92%;
   gap: 18px;
+  position: relative;
 }
 .main-section__offers-buttons button:not(:last-child) {
   display: flex;
@@ -655,4 +658,29 @@ body {
 }
 .main-section__offers-buttons-fifthButton div {
   background-color: #46CDDE;
+}
+.main-section__offers-buttons > img {
+  position: absolute;
+  inset: -85% auto auto 0%;
+}
+
+.second-section {
+  width: 100%;
+}
+.second-section__container {
+  max-width: 1560px;
+  width: 92%;
+  margin: 0 auto;
+}
+.second-section__container-firstTitle {
+  font-family: "WF Visual Sans";
+  font-size: 47px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.second-section__container-secondTitle {
+  font-family: "Articulat CF Medium";
+  font-size: 20px;
+  margin-bottom: 44px;
+  color: #747373;
 }/*# sourceMappingURL=style.css.map */
