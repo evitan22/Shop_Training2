@@ -683,4 +683,48 @@ body {
   font-size: 20px;
   margin-bottom: 44px;
   color: #747373;
+}
+.second-section__container-gallery {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.second-section__container-gallery .swiper-slide {
+  height: 588px !important;
+}
+.second-section__container-gallery-item {
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.second-section__container-gallery-first {
+  background-image: url("../images/aprilImage1.jpg");
+}
+.second-section__container-gallery-second {
+  background-image: url("../images/aprilImage2.jpg");
+}
+.second-section__container-gallery-third {
+  background-image: url("../images/aprilImage3.jpg");
+}
+.second-section__container-gallery-fourth {
+  background-image: url("../images/aprilImage4.jpg");
+}
+.second-section__container-gallery-fifth {
+  background-image: url("../images/aprilImage5.jpg");
+}
+.second-section__container .swiper-scrollbar {
+  position: relative !important;
+  margin-top: 35px;
+  margin-bottom: 60px;
+  background: rgba(0, 0, 0, 0.08);
+  height: 4px;
+  border-radius: 2px;
+}
+.second-section__container .swiper-scrollbar-drag {
+  background: #2C2828;
+  height: 4px;
 }/*# sourceMappingURL=style.css.map */

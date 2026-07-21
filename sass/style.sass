@@ -260,6 +260,30 @@ body
                 position: absolute
                 inset: -85% auto auto 0%
 
+// .second-section
+//     width: 100%
+//     &__container
+//         max-width: 1560px
+//         width: 92%
+//         margin: 0 auto
+//         &-firstTitle
+//             font-family: "WF Visual Sans"
+//             font-size: 47px
+//             font-weight: 600
+//             margin-bottom: 7px
+//         &-secondTitle
+//             font-family: "Articulat CF Medium"
+//             font-size: 20px
+//             margin-bottom: 44px
+//             color: #747373
+//         &-gallery
+//             display: flex
+//             div
+//                 width: 30%
+//                 height: 588px
+//             &-first
+//                 background-image: url("../images/aprilImage1.jpg")
+
 .second-section
     width: 100%
     &__container
@@ -276,3 +300,46 @@ body
             font-size: 20px
             margin-bottom: 44px
             color: #747373
+        &-gallery
+            width: 100%
+            // position: relative
+            margin-bottom: 50px
+
+            .swiper-slide
+                height: 588px !important
+            // Общий класс для всех карточек (слайдов)
+            &-item
+                border-radius: 24px
+                background-size: cover
+                background-position: center
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+                padding: 30px
+                box-sizing: border-box
+
+            // Фоны для каждой конкретной карточки
+            &-first
+                background-image: url("../images/aprilImage1.jpg")
+            &-second
+                background-image: url("../images/aprilImage2.jpg")
+            &-third
+                background-image: url("../images/aprilImage3.jpg")
+            &-fourth
+                background-image: url("../images/aprilImage4.jpg")
+            &-fifth
+                background-image: url("../images/aprilImage5.jpg")
+
+            // Стилизуем полосу прокрутки Swiper под макет
+        .swiper-scrollbar
+            position: relative !important
+            margin-top: 35px
+            margin-bottom: 60px
+            background: rgba(0, 0, 0, 0.08)
+            height: 4px
+            border-radius: 2px
+            
+
+        .swiper-scrollbar-drag
+            background: #2C2828
+            height: 4px
