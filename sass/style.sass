@@ -302,23 +302,31 @@ body
             color: #747373
         &-gallery
             width: 100%
-            // position: relative
             margin-bottom: 50px
-
             .swiper-slide
                 height: 588px !important
-            // Общий класс для всех карточек (слайдов)
             &-item
-                border-radius: 24px
+                border-radius: 18px
                 background-size: cover
-                background-position: center
                 display: flex
                 flex-direction: column
                 justify-content: flex-end
-                padding: 30px
                 box-sizing: border-box
-
-            // Фоны для каждой конкретной карточки
+                padding-left: 2%
+                span
+                    display: block
+                    font-family: "Articulat CF Medium"
+                    font-size: 28px
+                    color: white
+                    margin-top: 434px
+                    margin-bottom: 28px
+                button
+                    font-family: "Articulat CF Medium"
+                    font-size: 17px
+                    border: none
+                    border-radius: 49px
+                    width: 237px
+                    height: 60px
             &-first
                 background-image: url("../images/aprilImage1.jpg")
             &-second
@@ -329,17 +337,13 @@ body
                 background-image: url("../images/aprilImage4.jpg")
             &-fifth
                 background-image: url("../images/aprilImage5.jpg")
-
-            // Стилизуем полосу прокрутки Swiper под макет
         .swiper-scrollbar
             position: relative !important
-            margin-top: 35px
-            margin-bottom: 60px
+            margin-top: 46px
+            margin-bottom: 136px
             background: rgba(0, 0, 0, 0.08)
             height: 4px
             border-radius: 2px
-            
-
         .swiper-scrollbar-drag
             background: #2C2828
             height: 4px
