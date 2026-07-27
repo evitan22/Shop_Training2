@@ -757,6 +757,7 @@ body {
 .third-section__menu {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 42px;
 }
 .third-section__menu-left {
   display: flex;
