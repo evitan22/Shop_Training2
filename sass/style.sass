@@ -378,3 +378,51 @@ body
                     text-align: center
                 img 
                     display: block
+    &__gallery
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(4, 1fr) 
+        gap: 84px 24px
+        &-item
+            &-background
+                border-radius: 18px
+                background-color: #f6f6f7
+                position: relative
+                margin-bottom: 23px
+                &-image
+                    width: 100%
+                &-favorites
+                    width: 36px
+                    height: 36px
+                    border-radius: 30px
+                    background-color: white
+                    position: absolute
+                    inset: 5% 7% auto auto
+                    display: flex
+                    align-items: center
+                    justify-content: center
+            &-description
+                display: flex
+                justify-content: space-between
+                &-name
+                    font-family: "Graphik"
+                    font-size: 18px
+                    margin-bottom: 16px
+                &-price
+                    font-size: 19px
+                    font-weight: 600
+                    span
+                        font-family: "Articulat CF Medium"
+                        font-size: 19px
+                &-basket
+                    width: 51px
+                    height: 51px
+                    border-radius: 30px
+                    background-color: #FF559C
+                    display: flex
+                    justify-content: center
+                    align-items: center   
+            &:not(:first-child)
+                .third-section__gallery-item-description-basket
+                    background-color: white 
+                    border: 2px solid #ACACAC
