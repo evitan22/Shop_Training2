@@ -747,6 +747,7 @@ body {
 .third-section {
   width: 89%;
   margin: 0 auto;
+  margin-bottom: 147px;
 }
 .third-section__title {
   font-family: "WF Visual Sans";
@@ -865,4 +866,22 @@ body {
 .third-section__gallery-item:not(:first-child) .third-section__gallery-item-description-basket {
   background-color: white;
   border: 2px solid #ACACAC;
+}
+
+.fourth-section {
+  color: white;
+  font-family: "Articulat CF Medium";
+}
+.fourth-section__firstFooter {
+  display: flex;
+  justify-content: space-around;
+  background-color: #282425;
+  font-size: 17px;
+  height: 155px;
+  padding-top: 50px;
+}
+.fourth-section__firstFooter span {
+  font-size: 15px;
+  display: block;
+  margin-top: 9px;
 }/*# sourceMappingURL=style.css.map */
