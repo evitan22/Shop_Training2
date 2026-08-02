@@ -444,3 +444,41 @@ body
             margin-top: 9px
     &__secondFooter
         background-color: #231f20
+        display: flex
+        &-left
+            display: grid
+            grid-template-columns: repeat(4, auto)
+            grid-template-areas: "first second third fourth" "fifth fifth fifth ."
+            width: 94%
+            margin: 0 auto
+            margin-left: 5.5%
+            margin-right: 4.4%
+            padding-top: 75px
+            gap: 52px
+            &-firstGroup
+                grid-area: first
+                img
+                    margin-bottom: 38px
+                &-firstText
+                    margin-bottom: 36px
+                    p
+                        margin: 0
+                        margin-bottom: 8px             
+                        &:last-child
+                            margin-bottom: 0
+                &-secondText
+                    p
+                        margin: 0
+                        margin-bottom: 11px
+                        &:last-child
+                            margin-bottom: 0
+                div
+                    font-size: 11px
+            &-secondGroup
+                grid-area: second
+            &-thirdGroup
+                grid-area: third
+            &-fourthGroup
+                grid-area: fourth
+            &-fifthGroup
+                grid-area: fifth

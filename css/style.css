@@ -887,4 +887,54 @@ body {
 }
 .fourth-section__secondFooter {
   background-color: #231f20;
+  display: flex;
+}
+.fourth-section__secondFooter-left {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-areas: "first second third fourth" "fifth fifth fifth .";
+  width: 94%;
+  margin: 0 auto;
+  margin-left: 5.5%;
+  margin-right: 4.4%;
+  padding-top: 75px;
+  gap: 52px;
+}
+.fourth-section__secondFooter-left-firstGroup {
+  grid-area: first;
+}
+.fourth-section__secondFooter-left-firstGroup img {
+  margin-bottom: 38px;
+}
+.fourth-section__secondFooter-left-firstGroup-firstText {
+  margin-bottom: 36px;
+}
+.fourth-section__secondFooter-left-firstGroup-firstText p {
+  margin: 0;
+  margin-bottom: 8px;
+}
+.fourth-section__secondFooter-left-firstGroup-firstText p:last-child {
+  margin-bottom: 0;
+}
+.fourth-section__secondFooter-left-firstGroup-secondText p {
+  margin: 0;
+  margin-bottom: 11px;
+}
+.fourth-section__secondFooter-left-firstGroup-secondText p:last-child {
+  margin-bottom: 0;
+}
+.fourth-section__secondFooter-left-firstGroup div {
+  font-size: 11px;
+}
+.fourth-section__secondFooter-left-secondGroup {
+  grid-area: second;
+}
+.fourth-section__secondFooter-left-thirdGroup {
+  grid-area: third;
+}
+.fourth-section__secondFooter-left-fourthGroup {
+  grid-area: fourth;
+}
+.fourth-section__secondFooter-left-fifthGroup {
+  grid-area: fifth;
 }/*# sourceMappingURL=style.css.map */
