@@ -382,8 +382,22 @@ table {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "ArialRegular";
+  src: url("../fonts/ArialRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
 .jost {
   font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -891,14 +905,14 @@ body {
 }
 .fourth-section__secondFooter-left {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: 350px 250px 250px auto;
   grid-template-areas: "first second third fourth" "fifth fifth fifth .";
   width: 94%;
   margin: 0 auto;
   margin-left: 5.5%;
   margin-right: 4.4%;
   padding-top: 75px;
-  gap: 52px;
+  gap: 52px 0;
 }
 .fourth-section__secondFooter-left-firstGroup {
   grid-area: first;
@@ -929,11 +943,67 @@ body {
 .fourth-section__secondFooter-left-secondGroup {
   grid-area: second;
 }
+.fourth-section__secondFooter-left-secondGroup-title {
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+.fourth-section__secondFooter-left-secondGroup ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 11px;
+}
 .fourth-section__secondFooter-left-thirdGroup {
   grid-area: third;
 }
+.fourth-section__secondFooter-left-thirdGroup-title {
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+.fourth-section__secondFooter-left-thirdGroup ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 11px;
+}
 .fourth-section__secondFooter-left-fourthGroup {
   grid-area: fourth;
+  font-family: "ArialRegular";
+}
+.fourth-section__secondFooter-left-fourthGroup-title {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.fourth-section__secondFooter-left-fourthGroup-subTitle {
+  font-size: 14px;
+  color: #B1B3B3;
+  margin-bottom: 35px;
+}
+.fourth-section__secondFooter-left-fourthGroup form {
+  width: 100%;
+  position: relative;
+}
+.fourth-section__secondFooter-left-fourthGroup form input {
+  width: 100%;
+  height: 57px;
+  border-radius: 47px;
+  padding-left: 6.7%;
+}
+.fourth-section__secondFooter-left-fourthGroup form input::-moz-placeholder {
+  font-family: "Articulat CF Medium";
+  font-size: 14px;
+}
+.fourth-section__secondFooter-left-fourthGroup form input::placeholder {
+  font-family: "Articulat CF Medium";
+  font-size: 14px;
+}
+.fourth-section__secondFooter-left-fourthGroup form button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 5px;
 }
 .fourth-section__secondFooter-left-fifthGroup {
   grid-area: fifth;

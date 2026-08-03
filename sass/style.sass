@@ -29,11 +29,24 @@
     font-style: normal
     font-display: swap
 
+@font-face 
+    font-family: "ArialRegular"
+    src: url("../fonts/ArialRegular.woff") format("woff")
+    font-style: normal
+    font-weight: normal
+    font-display: swap
+
 .jost 
     font-family: "Jost", sans-serif
     font-optical-sizing: auto
     font-weight: 500
     font-style: normal
+
+.plus-jakarta-sans 
+  font-family: "Plus Jakarta Sans", sans-serif
+  font-optical-sizing: auto
+  font-weight: 500
+  font-style: normal
 
 *
     box-sizing: border-box
@@ -447,14 +460,14 @@ body
         display: flex
         &-left
             display: grid
-            grid-template-columns: repeat(4, auto)
+            grid-template-columns: 350px 250px 250px auto
             grid-template-areas: "first second third fourth" "fifth fifth fifth ."
             width: 94%
             margin: 0 auto
             margin-left: 5.5%
             margin-right: 4.4%
             padding-top: 75px
-            gap: 52px
+            gap: 52px 0
             &-firstGroup
                 grid-area: first
                 img
@@ -476,9 +489,51 @@ body
                     font-size: 11px
             &-secondGroup
                 grid-area: second
+                &-title
+                    font-family: "Plus Jakarta Sans"
+                    font-size: 18px
+                    margin-bottom: 32px
+                ul
+                    display: flex
+                    flex-direction: column
+                    gap: 16px
+                    font-size: 11px
             &-thirdGroup
                 grid-area: third
+                &-title
+                    font-family: "Plus Jakarta Sans"
+                    font-size: 18px
+                    margin-bottom: 32px
+                ul
+                    display: flex
+                    flex-direction: column
+                    gap: 16px
+                    font-size: 11px
             &-fourthGroup
                 grid-area: fourth
+                font-family: "ArialRegular"
+                &-title
+                    font-size: 18px
+                    margin-bottom: 18px
+                &-subTitle
+                    font-size: 14px
+                    color: #B1B3B3
+                    margin-bottom: 35px
+                form 
+                    width: 100%
+                    position: relative
+                    input
+                        width: 100%
+                        height: 57px
+                        border-radius: 47px
+                        padding-left: 6.7%
+                        &::placeholder
+                            font-family: "Articulat CF Medium"
+                            font-size: 14px
+                    button
+                        position: absolute
+                        width: 50px
+                        height: 50px
+                        right: 5px
             &-fifthGroup
                 grid-area: fifth
