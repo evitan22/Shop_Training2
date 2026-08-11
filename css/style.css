@@ -1030,4 +1030,10 @@ body {
   align-items: center;
   justify-content: center;
   border: 1px solid #3b3738;
+}
+
+@media (max-width: 1199px) {
+  .main-section__poster-right-lolipops {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
